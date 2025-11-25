@@ -1,4 +1,4 @@
-# Restaurant Review Hash Table
+# Restaurant Review Search Engine Using a Hash Table
 
 Author: Alina Skowronek  
 Language: C++  
