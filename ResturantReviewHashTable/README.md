@@ -1,29 +1,61 @@
-<img src="https://www.colorado.edu/cs/profiles/express/themes/ucb/images/cu-boulder-logo-text-black.svg" alt="CU Boulder Logo" width="500">
+# Restaurant Review Hash Table
 
-$\color{#FF0000}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize ANY FORMS OF PLAGIARISM OR USE OF CHATGPT WILL RESULT IN A 0 AND BE REPORTED TO THE UNIVERSITY.
-}$
+Author: Alina Skowronek  
+Language: C++  
+Project Type: Data Structures / Hash Table
 
-$\color{#FF0000}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize YOU ARE EXPECTED TO INTERVIEW GRADE AND ANSWER ANY AND ALL QUESTIONS ASKED OF YOU.
-}$
+---
 
-$\color{#FF0000}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize INABILITY TO ANSWER QUESTIONS MAY RESULT IN FURTHER STEPS TO VERIFY THAT YOU WROTE YOUR OWN CODE.
-}$
+## Project Overview
+This project implements a system for storing and retrieving restaurant reviews using a hash table data structure. Reviews are inserted, hashed, and retrieved efficiently by key. This project demonstrates understanding of hashing, collision resolution, and data organization in C++.
 
-# CSCI 2270: Data Structures Movie Review
+---
 
-This project is a simple implementation of a movie review using C++ and two data structures: a hash table and a Priority Queue. Please go through the *CSCI2270_Spring24_Project.pdf* for the detailed instructions.
+## How to Compile & Run
 
-## Submission Guidelines
+### Compile
+```bash
+g++ -Werror -Wall -Wpedantic -std=c++17 <your .cpp files here> -o RestaurantReviewHashTable
+```
 
-1. Push your final solution to your Github repository by the due date (Sunday, April 28 @ 1159PM MDT).
-2. Zip your GitHub repository solution and upload it to the Canvas Final Project dropbox (located under Week 13 on Canvas) by the due date (Sunday, April 28 @ 1159PM MDT).
+## Dependencies
+Make sure the following files are present in the same directory as your source code (modify this list based on your repo structure):
 
-## Disclaimer
+- HashTable.hpp
+- Review.hpp
+- MainDriver.cpp
+- Any input files (e.g., restaurants.txt, reviews.txt)
 
-Students are not allowed to share this code or make it public at any time, even after the course has completed. Also, this project must be worked on independently.
+---
 
-## Note
+## Features
+- Insert restaurant reviews into a hash table
+- Lookup reviews by key
+- Collision handling (chaining or open addressing)
+- Load factor calculations
+- Display and debugging functions
 
-1. Do not modify header files - hash.hpp or PriorityQueue.hpp.
-2. You are welcome to add helper functions as needed but they should not be declared within the classes listed in the aofremntioned header files.
-3. You are required to schedule a mandatory Interview Grading with course staff. A sign-up sheet will be posted via a Canvas announcement at a later date. Inability to complete Interview Grading will result in a 0.
+---
+
+## Design & Implementation Notes
+- Hash function ensures uniform distribution of keys
+- Collision resolution implemented through chosen strategy
+- Modular class structure (Review, HashTable, Driver)
+- Supports dynamic or fixed table sizes depending on implementation
+
+---
+
+## How to Test
+1. Compile using the provided command.
+2. Run the executable.
+3. Insert reviews manually or load them from an input file.
+4. Test lookup, insertion, and search operations.
+5. Observe collision handling and load factor behavior.
+
+---
+
+## Future Improvements
+- Add persistent file storage (save/load hash table)
+- Test multiple hash functions for comparison
+- Create a GUI or web interface for viewing reviews
+- Add sentiment analysis for review text
