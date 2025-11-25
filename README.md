@@ -54,12 +54,6 @@ Make sure the following files are present in the same directory as your source c
 
 ---
 
-## License
-Created by Alina Skowronek.  
-Use permitted for learning and academic purposes. Commercial or redistributed use requires permission.
-
----
-
 ## Future Improvements
 - Add persistent file storage (save/load hash table)
 - Test multiple hash functions for comparison
